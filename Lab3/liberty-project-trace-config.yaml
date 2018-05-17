@@ -1,0 +1,9 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: liberty-project-trace-config
+data:
+  maxfiles: "20"
+  maxfilesize: "100"
+  tracespec: '*=info'
+  

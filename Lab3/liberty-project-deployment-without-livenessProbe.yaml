@@ -1,0 +1,35 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: liberty-project
+spec:
+  selector:
+    matchLabels:
+      app: liberty-project
+  replicas: 3
+  template:
+    metadata:
+      labels:
+        app: liberty-project
+    spec:
+      containers:
+      - name: liberty-project
+        image: liberty-project:1.0.0
+        ports:
+        - containerPort: 9081
+        env:
+        - name: LIBERTY_TRACE_TRACESPECIFICATION
+          valueFrom:
+            configMapKeyRef:
+              name: liberty-project-trace-config
+              key: tracespec
+        - name: LIBERTY_TRACE_MAXFILESIZE
+          valueFrom:
+            configMapKeyRef:
+              name: liberty-project-trace-config
+              key: maxfilesize
+        - name: LIBERTY_TRACE_MAXFILES
+          valueFrom:
+            configMapKeyRef:
+              name: liberty-project-trace-config
+              key: maxfiles
