@@ -62,7 +62,7 @@
 
 - Clone ICP Workshop git repository
 
-      git clone https://github.com/kkomp/icp-workshop.git
+      git clone https://github.com/nnworkspace/icp-workshop
 
       cd ~/icp-workshop/Lab1/app
 
