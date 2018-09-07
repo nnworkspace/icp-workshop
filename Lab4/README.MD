@@ -165,7 +165,7 @@
 
       kubectl apply -f jenkins-registry_config_icp.yaml
 
-      kubectl apply -f jenkins-registry_secret_icp.yaml
+      kubectl apply -f jenkins-registry_secret.yaml
 
 - Install the Jenkins server by using Helm
 
