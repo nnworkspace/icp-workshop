@@ -71,7 +71,7 @@
 
 - Compile the application with `mvn install` according to the instructions in Lab1
 
-      cd ~/icp-workshop/Lab1/apply
+      cd ~/icp-workshop/Lab1/app
       mvn install
 
 - Build, tag and push a new version (tag 2.0.0) of the Docker Image to the ICP Private Repository according to the instructions in Lab 1 and 2
