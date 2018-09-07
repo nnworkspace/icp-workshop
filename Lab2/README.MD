@@ -36,7 +36,7 @@
 
       docker push mycluster.icp:8500/default/liberty-project:1.0.0
 
-- Check in ICP Console: https://<icp-ip-address>:8443/console/images
+- Check in ICP Console: `https://<icp-ip-address>:8443/console/images`
 
 ## 2.2 Create a simple deployment
 
