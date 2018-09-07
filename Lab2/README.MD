@@ -77,13 +77,17 @@
 
       kubectl edit deployment liberty-project
 
-- Check in the ICP Console for the event "Scaled up replica set liberty-project-... to 3":
+  Info: by default kubectl opens vim for editing. In case you don't know how to use vim, [here is the quick start for vim.](https://github.com/yuanqing/vim-basics/blob/master/README.md)
 
-      https://<icp-ip-address>:8443/console/workloads/deployments/default/liberty-project/events  
+- Check in the ICP Console for the event "Scaled up replica set liberty-project-... to 3":
+  ```
+  https://<icp-ip-address>:8443/console/workloads/deployments/default/liberty-project/events
+  ```  
 
 - Check in the ICP Console the different pod logs
-
-      https://<icp-ip-address>:8443/console/workloads/deployments/default/liberty-project/logs
+  ```
+  https://<icp-ip-address>:8443/console/workloads/deployments/default/liberty-project/logs
+  ```
 
     Select the three different pods in the combo box on the right side.
 
