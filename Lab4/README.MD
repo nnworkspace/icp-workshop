@@ -117,7 +117,7 @@
 
 - Add this Helm Chart repository to the Helm client configuration
 
-       helm repo add ibmcase https://raw.githubusercontent.com/ibm-cloud-architecture/refarch-cloudnative-kubernetes/spring/docs/charts/bluecompute-ce
+       helm repo add ibmcase https://github.com/ibm-cloud-architecture/refarch-cloudnative-kubernetes/tree/spring/docs/charts/bluecompute-ce
 
        helm repo list
 
