@@ -20,22 +20,24 @@
 
   ```
   sudo apt-get install maven
+
   ```
   The password for superuser should be: `passw0rd`
 
 1. Connect to the IBM Cloud Proviate Server in your virtual network:
-  1. In your running VM, open the firefox and click the bookmark "IBM Cloud Private". On the "Your connection is not secure page, click "advanced":![Init ICP Server 1](/doc-images/init-icp-server-1.png "Init ICP Server 1")
+  
+  1. In your running VM, open the firefox and click the bookmark "IBM Cloud Private". On the "Your connection is not secure page, click "advanced": ![Init ICP Server 1](/doc-images/init-icp-server-1.png)
 
-    Then click "Add Exception", and click "Confirm Security Exception".
-    
-    ----
-    **NOTE**
+   Then click "Add Exception", and click "Confirm Security Exception".
 
-    If you see a "502 Bad Gateway" message after confirming the security exception, just wait a couple of minutes and reload the page. Kubernetes master cluster needs time to intialize, multiple containers need to boot. 
+  ----
+  **NOTE**
 
-    [More information about the 502 error can be found here](https://www.ibm.com/support/knowledgecenter/en/SSBS6K_2.1.0.2/getting_started/known_issues.html#ui_502).
+  If you see a "502 Bad Gateway" message after confirming the security exception, just wait a couple of minutes and reload the page. Kubernetes master cluster needs time to intialize, multiple containers need to boot. 
 
-    ----
+  [More information about the 502 error can be found here](https://www.ibm.com/support/knowledgecenter/en/SSBS6K_2.1.0.2/getting_started/known_issues.html#ui_502).
+
+  ----
 
   1. On the ICP log in page, log in with username `admin` and password `admin`. 
 
@@ -44,7 +46,6 @@
   1. You will need to paste all the commands in the next window to a terminal console. Click the "Copy" button in the next window and these commands are copied: ![Configure ICP client 1](/doc-images/configure-icp-client-1.png "Configure ICP client 1")
 
   1. In a console in your VM, paste the commands copied from last step. Execute them. 
-
 
 1. Clean up the VM. Since the VM for this workshop was provisioned with very limited resource, it is good to delete kubernetes pods and deployments to free up resource and make your workshop running more smoothly. You can view the pods and deployments with these two commands:
 
