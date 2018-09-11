@@ -140,7 +140,7 @@
 
   and
 
-       https://raw.githubusercontent.com/ibm-cloud-architecture/refarch-cloudnative-kubernetes/spring/docs/charts/bluecompute-ce/bluecompute-ce-0.0.6.tgz
+       https://raw.githubusercontent.com/ibm-cloud-architecture/refarch-cloudnative-kubernetes/spring/docs/charts/bluecompute-ce/bluecompute-ce-0.0.5.tgz
 
 - Add this Helm Chart repository to the Helm client configuration
 
@@ -169,6 +169,8 @@
 - Open the application via the following HTTP (!) URL in the browser
 
        http://<icp-ip-address>:31337/
+
+- Alternatively, this application can be installed via ICP console GUI. You may follow the instruction in this tutorial: [https://www.ibm.com/cloud/garage/tutorials/cloudnative-microservices-cloud-private?task=2](https://www.ibm.com/cloud/garage/tutorials/cloudnative-microservices-cloud-private?task=2)
 
 
 ## 4.3 Set up a Jenkins pipeline for CI/CD of deployments to a ICP Cluster
@@ -259,9 +261,13 @@ https://www.ibm.com/cloud/garage/tutorials/cloudnative-microservices-cloud-priva
 
 - Set up a Jenkins pipeline to continuously integrate and deliver Kubernetes deployments to an IBM Cloud Private cluster
 https://www.ibm.com/cloud/garage/tutorials/cloud-private-jenkins-pipeline
+https://www.ibm.com/cloud/garage/tutorials/cloud-private-jenkins-pipeline?task=2
 
 - Bluecompute-web part of the 'IBM Cloud Native Reference Architecture for Kubernetes' suite
 https://github.com/ibm-cloud-architecture/refarch-cloudnative-bluecompute-web
+
+- Bluecompute-ce, github repository
+https://github.com/ibm-cloud-architecture/refarch-cloudnative-kubernetes/tree/spring/docs/charts/bluecompute-ce
 
 - Reference Implementation for Microservices based on Kubernetes and the IBM Container Service
 https://github.com/ibm-cloud-architecture/refarch-cloudnative-kubernetes
