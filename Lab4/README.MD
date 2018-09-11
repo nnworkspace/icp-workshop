@@ -16,6 +16,33 @@
       Client: &version.Version{SemVer:"v2.7.2+icp", ...}
       Server: &version.Version{SemVer:"v2.7.2+icp", ...}
 
+    If the Server is not initialized, execute the following commands from your console:
+
+  ```
+  wget https://<icp-ip-address>:8443/helm-api/cli/linux-amd64/helm --no-check-certificate
+  wget https://<icp-ip-address>:8443/api/cli/icp-linux-amd64 --no-check-certificate
+
+  chmod u+x icp-linux-amd64
+  chmod u+x helm
+
+  sudo mv ./icp-linux-amd64 /usr/local/bin/icp
+  sudo mv ./helm /usr/local/bin/helm
+
+  icp login -a https://<icp-ip-address>:8443 (https://%3Cicp-ip-address%3E:8443)  --skip-ssl-validation
+  icp clusters
+  icp cluster-config mycluster
+
+  helm init --tiller-tls
+
+  ```
+
+    Then retry:
+
+  ```
+  helm version --tls
+  
+  ```
+
 
 ## 4.1 Hello Helm
 
