@@ -28,17 +28,16 @@
   
   1. In your running VM, open the firefox and click the bookmark "IBM Cloud Private". On the "Your connection is not secure page, click "advanced": ![Init ICP Server 1](/doc-images/init-icp-server-1.png)
 
-   Then click "Add Exception", and click "Confirm Security Exception".
+    Then click "Add Exception", and click "Confirm Security Exception".
 
-  ----
-  **NOTE**
+    ----
+    **NOTE**
 
-  If you see a "502 Bad Gateway" message after confirming the security exception, just wait a couple of minutes and reload the page. Kubernetes master cluster needs time to intialize, multiple containers need to boot. 
+    If you see a "502 Bad Gateway" message after confirming the security exception, just wait a couple of minutes and reload the page. Kubernetes master cluster needs time to intialize, multiple containers need to boot. 
 
-  [More information about the 502 error can be found here](https://www.ibm.com/support/knowledgecenter/en/SSBS6K_2.1.0.2/getting_started/known_issues.html#ui_502).
+    [More information about the 502 error can be found here](https://www.ibm.com/support/knowledgecenter/en/SSBS6K_2.1.0.2/getting_started/known_issues.html#ui_502).
 
-  ----
-
+    ----
   1. On the ICP log in page, log in with username `admin` and password `admin`. 
 
   1. Click the admin icon on the upper right corner, then click "Configure client": ![Configure ICP client 0](/doc-images/configure-icp-client-0.png "Configure ICP client 0")
